@@ -1,0 +1,48 @@
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+@media screen and (min-width: 700px) {
+    .card-container{
+
+    }
+    .column {
+        float: left;
+        padding: 0 10px;
+        width: 45%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .row {
+        margin: 0 -5px;
+        }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+  }
+@media (min-width:1024px) {
+    .filter-container{
+        width: 20%;
+        position: absolute;
+    }
+    .card-container{
+        margin-left: 20%;
+    }
+    .column {
+        float: left;
+        width: 22%;
+        padding: 0 10px;
+    }
+    .row {
+        margin: 0 -5px;
+        }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
