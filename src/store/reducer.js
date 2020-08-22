@@ -3,21 +3,37 @@ import axios from 'axios';
 
 const intialState = {
     spacexData:[],
-    count: 2
+    yearFilter:'none',
+    launchFilter:'none',
+    landFilter:'none'
+    // Future : filter: "city=Antwerp&firstName=Dax&lastName=Bosch&postalCode=2600"
 }
 
 const redcer=( state = intialState, action)=>{
     switch(action.type){
-        case actionType.ApiCalled :
-            console.log("Apicalled");
-                const fetchData = async () => {
-                const response = await axios.get('https://api.spacexdata.com/v3/launches?limit=14');
-                console.log(response.data);
-                state.spacexData= response.data;
-                state.count=4;
-            }   
-            fetchData();
-            return state;
+        case actionType.ApiCalled :  
+            return {
+                ...state,
+                spacexData:action.payload.data
+            };
+        case actionType.APPLIED_YEAR_FILTER :
+            return {
+                ...state,
+                spacexData:action.payload.data,
+                yearFilter:action.yearFilter
+            };
+        case actionType.APPLIED_LAUNCH_FILTER :
+            return {
+                ...state,
+                spacexData:action.payload.data,
+                launchFilter:action.launchFilter
+            };
+        case actionType.APPLIED_LAND_FILTER :
+            return {
+                ...state,
+                spacexData:action.payload.data,
+                landFilter:action.landFilter
+            };
             
     }
     return state;

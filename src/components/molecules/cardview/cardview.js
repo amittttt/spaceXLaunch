@@ -3,7 +3,6 @@ import './cardview.css';
 import Image from '../../atoms/image/image';
 
 const cardview=(props)=>{
-    console.log(props.miss);
     const missionName = props.mission_name +' #'+props.flight_number
     const missionIds = props.mission_id;
     return (
@@ -24,8 +23,8 @@ const cardview=(props)=>{
             </ul>
           </div>
           <div>Launch Year : {props.launch_year} </div>
-          <div>Sucessful Launch : false </div>
-          <div>Sucessful Landing : {props.launch_success} </div>
+          <div>{`Sucessful Launch: ${props.launch_success}`} </div>
+          <div>{`Sucessful Landing : ${props.landing_success}`} </div>
         </div>
       </div>
     );

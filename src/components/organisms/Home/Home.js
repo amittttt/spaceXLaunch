@@ -3,21 +3,13 @@ import FilterView from '../../molecules/filterview/filterview';
 import CardView from '../../molecules/cardview/cardview';
 import Navbar from '../../atoms/navbar/navbar';
 import { connect } from 'react-redux'
-import axios from 'axios';
+import {fetchRemoteData} from '../../../store/actions'
 import './Home.css';
 
 const Home = (props) => {
-    const [spacexData, setspacexData] = useState([]);
-
     useEffect(() => {
-        const fetchData = async () => {
-            const response = await axios.get('https://api.spacexdata.com/v3/launches?limit=14');
-            console.log(response.data);
-            setspacexData(response.data);
-        }   
-        fetchData();
-        //props.onDatasend();
-    }, []);
+        props.fetchRemoteData();
+    }, [fetchRemoteData]);
 
     // Duplication code [Need to remove this]
     return (
@@ -28,7 +20,7 @@ const Home = (props) => {
                 <FilterView></FilterView>
             </div>
             <div className="card-container">
-                {spacexData.map(repo =>
+                {props.spacexData.map(repo =>
                     (
                         (repo.flight_number % 4) === 0
                         ?
@@ -42,7 +34,7 @@ const Home = (props) => {
                                         mission_id={repo.mission_id}
                                         launch_year={repo.launch_year}
                                         launch_success={repo.launch_success}
-                                        landing_success={repo.launch_success}
+                                        landing_success={repo.rocket.first_stage.cores[0].land_success}
                                         />
                                 </div>
                             </div>
@@ -56,10 +48,9 @@ const Home = (props) => {
                                 mission_id={repo.mission_id}
                                 launch_year={repo.launch_year}
                                 launch_success={repo.launch_success}
-                                landing_success={repo.launch_success}
+                                landing_success={repo.rocket.first_stage.cores[0].land_success}
                                 />
                         </div>
-                        
                 ))}
             </div>
         </section>
@@ -68,16 +59,8 @@ const Home = (props) => {
 
 
 const mapStateToProps = state =>{
-    console.log("Calling state..");
-    console.log(state.spacexData);
     return {
-        ctr:state.count
+        spacexData:state.spacexData
     }
 }
-const mapDispatchToProps = dispatch => {
-    return {
-        onDatasend: () => dispatch({type: 'ApiCalled'})
-    };
-};
-
-export default connect(mapStateToProps,mapDispatchToProps)(Home);
+export default connect(mapStateToProps,{fetchRemoteData})(Home);
