@@ -15,7 +15,7 @@ const Home = (props) => {
     return (
         <section>
             {props.ctr}
-            <Navbar navHeading="SpaceX Launch Programs"/>
+            <Navbar navHeading="SpacEX Launch Programs"/>
             <div className="filter-container">
                 <FilterView></FilterView>
             </div>
