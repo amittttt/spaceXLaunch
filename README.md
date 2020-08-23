@@ -6,7 +6,7 @@ Coding Assignment
 
 ## Project Status
 
-This project is currently in development. Users can filter by year, success launch and success land for spacex. Writing the test cases and working on code refactoring.
+This project is currently in development. Users can filter by year, success launch and success land for spacex. Writing the test cases and working on code refactoring is on progress.
 
 ## Project Screen Shot(s)
 
