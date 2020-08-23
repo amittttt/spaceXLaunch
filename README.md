@@ -31,12 +31,12 @@ To Run build:
 
 `npm run build`  
 
-To Start Client Side Server:
+To Start Client Side Rendering:
 
 `npm run dev`  
 `localhost:3000`
 
-To Start Server:
+To Start Server Side Rendering:
 
 `npm run ssr`  
 `localhost:8000`
