@@ -3,7 +3,7 @@ import './underlineheading.css';
 const underlineheading=(props)=>{
     return (
         <nav className="underline-heading">
-           {props.heading}   
+           <span className="underline-text">{props.heading}  </span> 
         </nav>
     );
   }
