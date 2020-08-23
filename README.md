@@ -2,7 +2,7 @@
 
 Coding Assignment 
 
-`url` : https://spacexlaunchsapient.herokuapp.com/
+`Project Hosted` : https://spacexlaunchsapient.herokuapp.com/
 
 ## Project Status
 
