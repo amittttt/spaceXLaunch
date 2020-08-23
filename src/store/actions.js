@@ -38,7 +38,7 @@ export const fetchRemoteData = () => dispatch => {
               yearFilter:filterValue
             })
          )
-    }else if(filterType==='sucessful-launch'){
+    }else if(filterType==='successful-launch'){
       if(state.launchFilter===filterValue){
          filter = yearFilter+landFilter;
          filterValue='none';
@@ -55,7 +55,7 @@ export const fetchRemoteData = () => dispatch => {
             })
          )
     }
-    else if(filterType==='sucessful-landing'){
+    else if(filterType==='successful-landing'){
       if(state.landFilter===filterValue){
          filter = launchFilter+yearFilter
          filterValue='none';

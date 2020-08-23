@@ -16,11 +16,11 @@ const button=(props)=>{
       if(e.target.dataset.filterItems==='year'&& props.state.yearFilter!=='none' && props.state.yearFilter!==undefined){
         prevStateId = document.getElementById(`year-${props.state.yearFilter}`);
         prevStateId.classList.remove('is-active');
-      }else if(e.target.dataset.filterItems==='sucessful-launch'&& props.state.launchFilter!=='none' && props.state.launchFilter!==undefined){
-        prevStateId = document.getElementById(`sucessful-launch-${props.state.launchFilter}`);
+      }else if(e.target.dataset.filterItems==='successful-launch'&& props.state.launchFilter!=='none' && props.state.launchFilter!==undefined){
+        prevStateId = document.getElementById(`successful-launch-${props.state.launchFilter}`);
         prevStateId.classList.remove('is-active');
-      }else if(e.target.dataset.filterItems==='sucessful-landing'&& props.state.landFilter!=='none' && props.state.landFilter!==undefined){
-        prevStateId = document.getElementById(`sucessful-landing-${props.state.landFilter}`);
+      }else if(e.target.dataset.filterItems==='successful-landing'&& props.state.landFilter!=='none' && props.state.landFilter!==undefined){
+        prevStateId = document.getElementById(`successful-landing-${props.state.landFilter}`);
         prevStateId.classList.remove('is-active');
       }
       

@@ -68,22 +68,22 @@ const filterview = () => {
           <Button filterType="year" value="2020"></Button>
         </div>
       </div>
-      <UnderLineHeading heading="Sucessful Launch"></UnderLineHeading>
+      <UnderLineHeading heading="successful Launch"></UnderLineHeading>
       <div className="filter-row">
         <div className="filter-column">
-          <Button filterType="sucessful-launch" value="true"></Button>
+          <Button filterType="successful-launch" value="true"></Button>
         </div>
         <div className="filter-column">
-          <Button filterType="sucessful-launch" value="false"></Button>
+          <Button filterType="successful-launch" value="false"></Button>
         </div>
       </div>
-      <UnderLineHeading heading="Sucessful Landing"></UnderLineHeading>
+      <UnderLineHeading heading="Successful Landing"></UnderLineHeading>
       <div className="filter-row">
         <div className="filter-column">
-          <Button filterType="sucessful-landing" value="true"></Button>
+          <Button filterType="successful-landing" value="true"></Button>
         </div>
         <div className="filter-column">
-          <Button filterType="sucessful-landing" value="false"></Button>
+          <Button filterType="successful-landing" value="false"></Button>
         </div>
       </div>
     </div>
