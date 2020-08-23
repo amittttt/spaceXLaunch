@@ -26,17 +26,20 @@ Installation:
 
 `npm install`  
 
-To Run Test Suite:  
+To Run build:  
 
-`npm test`  
+`npm run build`  
+
+To Start Client Side Server:
+
+`npm run dev`  
+`localhost:3000`
 
 To Start Server:
 
-`npm start`  
+`npm run ssr`  
+`localhost:8000`
 
-To Visit App:
-
-`localhost:3000/ideas`  
 
 ## Reflection
 
