@@ -8,9 +8,9 @@ This project is currently in development. Users can filter by year, success laun
 
 ## Project Screen Shot(s)
 
-#### Example:   
+#### Lighthouse Analytics 
 
-[ PRETEND SCREEN SHOT IS HERE ]
+![alt text](https://github.com/amittttt/spaceXLaunch/blob/master/screenshot/LightHouse.PNG)
 
 [ PRETEND OTHER SCREEN SHOT IS HERE ]
 
