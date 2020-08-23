@@ -1,6 +1,7 @@
 ## SpaceXLaunch
 
 Coding Assignment 
+`url` : https://spacexlaunchsapient.herokuapp.com/
 
 ## Project Status
 
@@ -12,9 +13,6 @@ This project is currently in development. Users can filter by year, success laun
 
 ![alt text](https://github.com/amittttt/spaceXLaunch/blob/master/screenshot/lighthouseanalytics.PNG)
 
-#### Working Demo 
-
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
 
 ## Installation and Setup Instructions
 
