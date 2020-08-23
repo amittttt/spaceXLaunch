@@ -3,11 +3,8 @@
 Coding Assignment 
 
 ## Project Status
-(only necessary if incomplete)
 
-#### Example:
-
-This project is currently in development. Users can filter tweets by username and keyword and see visual data representation. Functionality to sort by additional parameters is in progress.
+This project is currently in development. Users can filter by year, success launch and success land for spacex. Functionality to sort by additional parameters is in progress.
 
 ## Project Screen Shot(s)
 
