@@ -14,7 +14,7 @@ This project is currently in development. Users can filter by year, success laun
 
 ![alt text](https://github.com/amittttt/spaceXLaunch/blob/master/screenshot/lighthouse.PNG)
 
-Project Demo: `https://drive.google.com/file/d/1kwoTlzzP4tqIDQObXxcdZSqykiUVUq4b/view`
+Project Demo: https://drive.google.com/file/d/1kwoTlzzP4tqIDQObXxcdZSqykiUVUq4b/view
 
 ## Installation and Setup Instructions
 
