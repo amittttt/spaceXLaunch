@@ -3,11 +3,7 @@
     display: block;
     margin-bottom: 20px;
   }
-
 @media screen and (min-width: 700px) {
-    .card-container{
-
-    }
     .column {
         float: left;
         padding: 0 10px;

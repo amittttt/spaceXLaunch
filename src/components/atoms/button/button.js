@@ -12,17 +12,15 @@ const button=(props)=>{
     }
     function handleSelectButtonColor(e){
       e.target.classList.toggle('is-active'); 
-
+      var prevStateId;
       if(e.target.dataset.filterItems==='year'&& props.state.yearFilter!=='none' && props.state.yearFilter!==undefined){
-        var prevStateId = document.getElementById('year'+'-'+props.state.yearFilter);
+        prevStateId = document.getElementById(`year-${props.state.yearFilter}`);
         prevStateId.classList.remove('is-active');
-
       }else if(e.target.dataset.filterItems==='sucessful-launch'&& props.state.launchFilter!=='none' && props.state.launchFilter!==undefined){
-        var prevStateId = document.getElementById('sucessful-launch'+'-'+props.state.launchFilter);
+        prevStateId = document.getElementById(`sucessful-launch-${props.state.launchFilter}`);
         prevStateId.classList.remove('is-active');
-
       }else if(e.target.dataset.filterItems==='sucessful-landing'&& props.state.landFilter!=='none' && props.state.landFilter!==undefined){
-        var prevStateId = document.getElementById('sucessful-landing'+'-'+props.state.landFilter);
+        prevStateId = document.getElementById(`sucessful-landing-${props.state.landFilter}`);
         prevStateId.classList.remove('is-active');
       }
       

@@ -1,5 +1,4 @@
 import * as actionType from './actions';
-import axios from 'axios';
 
 const intialState = {
     spacexData:[],
@@ -34,9 +33,10 @@ const redcer=( state = intialState, action)=>{
                 spacexData:action.payload.data,
                 landFilter:action.landFilter
             };
+        default :
+            return state;
             
     }
-    return state;
 }
 
 export default redcer;

@@ -54,9 +54,18 @@ const filterview = () => {
         <div className="filter-column">
           <Button filterType="year" value="2017"></Button>
         </div>
-      </div>        <div className="filter-row">
+      </div>        
+      <div className="filter-row">
         <div className="filter-column">
           <Button filterType="year" value="2018"></Button>
+        </div>
+        <div className="filter-column">
+          <Button filterType="year" value="2019"></Button>
+        </div>
+      </div>
+      <div className="filter-row">
+        <div className="filter-column">
+          <Button filterType="year" value="2020"></Button>
         </div>
       </div>
       <UnderLineHeading heading="Sucessful Launch"></UnderLineHeading>
