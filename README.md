@@ -1,6 +1,6 @@
 ## SpaceXLaunch
 
-Publicis Sapient- Coding Assignment 
+Coding Assignment 
 
 ## Project Status
 (only necessary if incomplete)
