@@ -68,7 +68,7 @@ const filterview = () => {
           <Button filterType="year" value="2020"></Button>
         </div>
       </div>
-      <UnderLineHeading heading="successful Launch"></UnderLineHeading>
+      <UnderLineHeading heading="Successful Launch"></UnderLineHeading>
       <div className="filter-row">
         <div className="filter-column">
           <Button filterType="successful-launch" value="true"></Button>
