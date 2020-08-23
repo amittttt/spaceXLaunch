@@ -1,6 +1,6 @@
 ## SpaceXLaunch
 
-An application used to filter data form Twitter based on user preference, built with React, Redux, JavaScript, and CSS.
+Publicis Sapient- Coding Assignment 
 
 ## Project Status
 (only necessary if incomplete)
