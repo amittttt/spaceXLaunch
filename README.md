@@ -12,7 +12,7 @@ This project is currently in development. Users can filter by year, success laun
 
 #### Lighthouse Analytics 
 
-![alt text](https://github.com/amittttt/spaceXLaunch/blob/master/screenshot/lighthouseanalytics.PNG)
+![alt text](https://github.com/amittttt/spaceXLaunch/blob/master/screenshot/lighthouse.PNG)
 
 
 ## Installation and Setup Instructions
