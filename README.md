@@ -8,6 +8,10 @@ Coding Assignment
 
 This project is currently in development. Users can filter by year, success launch and success land for spacex. Writing the test cases and working on code refactoring is on progress.
 
+Test Case: you can find unit test case in this branch `Amit/TestCases`.
+Reason why it is not in master?
+Because test case part is on progress after that code refectoring.
+
 ## Project Screen Shot(s)
 
 #### Lighthouse Analytics 
