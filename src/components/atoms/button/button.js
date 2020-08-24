@@ -3,7 +3,7 @@ import './button.css';
 import { connect } from 'react-redux'
 import {updateFilter} from '../../../store/actions'
 
-const button=(props)=>{
+ const button=(props)=>{
     var id = props.filterType+'-'+props.value;
 
     function onClickHandler(e){
