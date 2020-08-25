@@ -6,8 +6,7 @@ Coding Assignment
 
 ## Project Status
 
-This project is currently in development. Users can filter by year, success launch and success land for spacex. Writing the test cases and working on code refactoring is on progress.
-
+This project is currently in development. Users can filter by year, success launch and success land for spacex. Improving the code coverage and working in the code refactoring.
 Test Case: you can find unit test case in this branch `Amit/TestCases`.
 
 `Reason:` why it is not in master?
