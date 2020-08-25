@@ -7,10 +7,8 @@ Coding Assignment
 ## Project Status
 
 This project is currently in development. Users can filter by year, success launch and success land for spacex. Improving the code coverage and working in the code refactoring.
-Test Case: you can find unit test case in this branch `Amit/TestCases`.
-
-`Reason:` why it is not in master?
-Because test case part is on progress after that code refectoring.
+Test Case:  
+`As a program is evolved its complexity increases unless work is done to maintain or reduce it.`
 
 ## Project Screen Shot(s)
 
