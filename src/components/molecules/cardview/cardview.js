@@ -22,9 +22,9 @@ const cardview=(props)=>{
               ))}
             </ul>
           </div> */}
-          <div>Launch Year : {props.launch_year} </div>
-          <div>{`successful Launch: ${props.launch_success}`} </div>
-          <div>{`successful Landing : ${props.landing_success}`} </div>
+          <div> <span className="card-heading-key">Launch Year</span>: {props.launch_year} </div>
+          <div><span className="card-heading-key">Successful Launch</span>: {` ${props.launch_success}`} </div>
+          <div><span className="card-heading-key">Successful Landing</span>: {props.landing_success===null? 'N/A' : `${props.landing_success}`} </div>
         </div>
       </div>
     );

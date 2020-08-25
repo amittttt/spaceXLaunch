@@ -1,13 +1,19 @@
-
-
 .card-image{
     margin-left: 10%;
     width: 60%;
     text-align: center;
     padding: 20px;
 }
-
 .card-body{
     padding: 4%;
+}
+.card-heading-key{
+    font-weight: 700;
+    line-height: 2;
+}
+.missionName{
+    line-height: 2;
+    color:#035893;
+    font-weight: 700;
 }
 

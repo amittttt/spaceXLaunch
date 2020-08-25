@@ -9,7 +9,6 @@ import './Home.css';
 
 const Home = (props) => {
     useEffect(() => {
-        console.log(props.loading);
         props.fetchRemoteData();
     }, [fetchRemoteData]);
 
@@ -44,7 +43,6 @@ const Home = (props) => {
 
 
 const mapStateToProps = state =>{
-    console.log(state.loading);
     return {
         spacexData:state.spacexData,
         loading: state.loading

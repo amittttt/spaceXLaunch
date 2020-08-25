@@ -1,37 +1,38 @@
-
-
-    .filter-column {
-        float: left;
-        padding: 0 14px;
-        width: 30%;
-        margin-left: 10%;
-        display: block;
-        margin-bottom: 10px;
-    }
-    .filter-row {
-        margin: 0 -5px;
-        }
-    .filter-row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-@media(min-width:600px){
-    .filter-column{
-        padding: 0 2%;
-        width: 30%;
-        margin-left: 10%;
-        display: block;
-        margin-bottom: 10px;
-    }
+.filter-column {
+	float: left;
+	padding: 0 14px;
+	width: 30%;
+	margin-left: 10%;
+	display: block;
+	margin-bottom: 10px;
 }
-@media(min-width:1025px){
-    .filter-column{
-        padding: 0 2%;
-        width: 30%;
-        margin-left: 10%;
-        display: block;
-        margin-bottom: 10px;
-    }
+
+.filter-row {
+	margin: 0 -5px;
+}
+
+.filter-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media(min-width:600px) {
+	.filter-column {
+		padding: 0 2%;
+		width: 30%;
+		margin-left: 10%;
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+@media(min-width:1025px) {
+	.filter-column {
+		padding: 0 2%;
+		width: 30%;
+		margin-left: 10%;
+		display: block;
+		margin-bottom: 10px;
+	}
 }
