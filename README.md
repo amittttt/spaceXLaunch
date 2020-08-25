@@ -7,7 +7,6 @@ Coding Assignment
 ## Project Status
 
 This project is currently in development. Users can filter by year, success launch and success land for spacex. Improving the code coverage and working in the code refactoring.
-Test Case:  
 `As a program is evolved its complexity increases unless work is done to maintain or reduce it.`
 
 ## Project Screen Shot(s)
