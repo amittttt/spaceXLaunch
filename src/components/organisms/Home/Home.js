@@ -9,12 +9,12 @@ import './Home.css';
 
 const Home = (props) => {
     useEffect(() => {
+        console.log(props.loading);
         props.fetchRemoteData();
     }, [fetchRemoteData]);
 
     return (
         <section>
-            {props.ctr}
             <Navbar navHeading="SpacEX Launch Programs"/>
             <div className="filter-container">
                 <FilterView></FilterView>
@@ -36,6 +36,7 @@ const Home = (props) => {
                         </div>
                 ))}
             </div>
+            <div className="loading-data">{props.loading ? '🚀 Loading Data for you....' : ''}</div>
             <Footer></Footer>
         </section>
     );
@@ -43,8 +44,10 @@ const Home = (props) => {
 
 
 const mapStateToProps = state =>{
+    console.log(state.loading);
     return {
-        spacexData:state.spacexData
+        spacexData:state.spacexData,
+        loading: state.loading
     }
 }
 export default connect(mapStateToProps,{fetchRemoteData})(Home);

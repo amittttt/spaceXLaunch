@@ -5,7 +5,7 @@ import Home from './components/organisms/Home/Home';
 function App() {
   return (
     <div className="App">
-        <Home></Home>
+       <Home/>
     </div>
   );
 }

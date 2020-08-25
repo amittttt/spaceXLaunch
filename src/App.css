@@ -11,16 +11,6 @@ overflow-x: hidden;
     transition: 0.3s;
     padding: 0;
     margin: 6%;
-    /* display: grid; */
-    /*grid-gap: 1rem; */
-}
-
-/** Tablet **/
-@media (min-width:700px){
-    .card{
-        width: 90%;
-        height: 400px;
-    }
 }
 
 /** Desktop **/
@@ -30,3 +20,12 @@ overflow-x: hidden;
         height: 400px;
     }
 }
+/** Tablet **/
+@media (min-width:600px){
+    .card{
+        width: 90%;
+        height: 370px;
+    }
+}
+
+

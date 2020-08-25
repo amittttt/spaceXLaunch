@@ -17,9 +17,9 @@
         clear: both;
     }
 
-@media(min-width:700px){
+@media(min-width:600px){
     .filter-column{
-        padding: 0 5%;
+        padding: 0 2%;
         width: 30%;
         margin-left: 10%;
         display: block;
