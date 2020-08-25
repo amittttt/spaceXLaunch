@@ -1,13 +1,14 @@
 import React from "react";
 import './image.css';
+import {FallBack_IMAGE_URL} from '../../../constant';
 
 const image=(props)=>{
+    const imageUrl = props.url===null?FallBack_IMAGE_URL:props.url;
     return (
       <div className='img'>
           <img 
-            width='150px'
-            height='150px'
-            src={props.url}
+            className="img-dispaly"
+            src={imageUrl}
             alt='logo'
           />
       </div>

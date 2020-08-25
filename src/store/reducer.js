@@ -4,7 +4,8 @@ const intialState = {
     spacexData:[],
     yearFilter:'none',
     launchFilter:'none',
-    landFilter:'none'
+    landFilter:'none',
+    loading:true
     // Future : filter: "city=Antwerp&firstName=Dax&lastName=Bosch&postalCode=2600"
 }
 
@@ -13,7 +14,8 @@ const redcer=( state = intialState, action)=>{
         case actionType.ApiCalled :  
             return {
                 ...state,
-                spacexData:action.payload.data
+                spacexData:action.payload.data,
+                loading:false
             };
         case actionType.APPLIED_YEAR_FILTER :
             return {

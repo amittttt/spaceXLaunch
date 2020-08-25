@@ -3,11 +3,28 @@
     display: block;
     margin-bottom: 20px;
   }
-@media screen and (min-width: 700px) {
+  .loading-data{
+    text-align: center;
+    padding: 3px;
+    color: #000;
+    font-size:20px;
+    height: inherit;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 700;
+  }
+@media screen and (min-width: 600px) {
+    .filter-container{
+        width: 30%;
+        position: absolute;
+    }
+    .card-container{
+        margin-left: 30%;
+    }
     .column {
         float: left;
-        padding: 0 10px;
-        width: 45%;
+        padding: 0 ;
+        width: 50%;
         display: block;
         margin-bottom: 20px;
     }
@@ -22,8 +39,10 @@
   }
 @media (min-width:1024px) {
     .filter-container{
+        height: 600px;
         width: 20%;
-        position: absolute;
+        height: auto;
+        
     }
     .card-container{
         margin-left: 20%;
