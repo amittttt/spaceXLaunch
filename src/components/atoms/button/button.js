@@ -7,8 +7,8 @@ import {updateFilter} from '../../../store/actions'
     var id = props.filterType+'-'+props.value;
 
     function onClickHandler(e){
-      props.updateFilter(props.state,props.value,props.filterType);
       handleSelectButtonColor(e);
+      props.updateFilter(props.state,props.value,props.filterType);
     }
     function handleSelectButtonColor(e){
       e.target.classList.toggle('is-active'); 
@@ -23,7 +23,7 @@ import {updateFilter} from '../../../store/actions'
         prevStateId = document.getElementById(`successful-landing-${props.state.landFilter}`);
         prevStateId.classList.remove('is-active');
       }
-      
+      console.log(props.state);
     }
     return (
       <>

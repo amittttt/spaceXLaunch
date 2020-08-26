@@ -6,7 +6,6 @@ const intialState = {
     launchFilter:'none',
     landFilter:'none',
     loading:true
-    // Future : filter: "city=Antwerp&firstName=Dax&lastName=Bosch&postalCode=2600"
 }
 
 const redcer=( state = intialState, action)=>{
@@ -30,6 +29,7 @@ const redcer=( state = intialState, action)=>{
                 launchFilter:action.launchFilter
             };
         case actionType.APPLIED_LAND_FILTER :
+            console.log("Land filter udpate.."+state.landFilter);
             return {
                 ...state,
                 spacexData:action.payload.data,

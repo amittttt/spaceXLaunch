@@ -4,13 +4,25 @@ import CardView from '../../molecules/cardview/cardview';
 import Navbar from '../../atoms/navbar/navbar';
 import Footer from '../../atoms/footer/footer';
 import { connect } from 'react-redux'
-import {fetchRemoteData} from '../../../store/actions'
+import {fetchRemoteData,updateFilterFromParam} from '../../../store/actions'
 import './Home.css';
 
 const Home = (props) => {
     useEffect(() => {
-        props.fetchRemoteData();
-    }, [fetchRemoteData]);
+        const params =new URLSearchParams(window.location.search);
+        console.log(params.get("launch_year"));
+        console.log(params.get("land_success"));
+        console.log(params.get("launch_success"));
+        console.log((new URLSearchParams(window.location.search)));
+        if(params.get("launch_year")!=null||params.get("land_success")!=null||params.get("launch_success")!=null){
+            // change the state and call the function ?
+            console.log("Call this...");
+            props.updateFilterFromParam(params);
+            // props.updateFilter(props.state,props.value,props.filterType);
+        }else{
+            props.fetchRemoteData();
+        }
+    }, []);
 
     return (
         <section>
@@ -48,4 +60,4 @@ const mapStateToProps = state =>{
         loading: state.loading
     }
 }
-export default connect(mapStateToProps,{fetchRemoteData})(Home);
+export default connect(mapStateToProps,{fetchRemoteData,updateFilterFromParam})(Home);
